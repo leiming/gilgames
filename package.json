@@ -4,7 +4,7 @@
   "description": "Front end framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -13,10 +13,31 @@
   "keywords": [
     "framework"
   ],
-  "author": "leiming",
+  "author": "leiming <poetcoder@outlook.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leiming/gilgames/issues"
   },
-  "homepage": "https://github.com/leiming/gilgames"
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify-shim": "~3.8.0",
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.1",
+    "karma": "^0.12.0",
+    "karma-browserify": "^3.0.0",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  },
+  "browserify-shim": {
+    "external": "global:External"
+  },
+  "homepage": "https://github.com/leiming/gilgames",
+  "dependencies": {
+    "browserify": "^10.2.1",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }
